@@ -1,0 +1,115 @@
+
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push">
+
+        <mat-toolbar>
+            <span>Menú</span>
+            <button mat-icon-button
+                    (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+    
+        </mat-toolbar>
+        <mat-nav-list>
+            <a routerLink="./departamentos"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>work_outline</mat-icon>
+                <span>Departamentos</span>
+            </a>
+
+            <a routerLink="./clasificaciones"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>vertical_split</mat-icon>
+                <span>Clasificaciones</span>
+            </a>
+
+            <a routerLink="./prioridades"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>priority_high</mat-icon>
+                <span>Prioridad</span>
+            </a>
+
+            <a routerLink="./roles"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>perm_identity</mat-icon>
+                <span>Roles</span>
+            </a>
+
+            <a routerLink="./subclasificaciones"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>splitscreen</mat-icon>
+                <span>Subclasificaciones</span>
+            </a>
+
+            <a routerLink="./tickets"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>confirmation_number</mat-icon>
+                <span>Ticket</span>
+            </a>
+
+            <a routerLink="./listado"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>account_circle</mat-icon>
+                <span>Usuario</span>
+            </a>
+
+            <a routerLink="./listado"
+               mat-list-item
+               (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>recent_actors</mat-icon>
+                <span>Usuarios/Roles/Departamentos</span>
+            </a>
+            
+        </mat-nav-list>
+    </mat-sidenav>
+        
+    <mat-toolbar>
+        <button mat-icon-button
+                (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <h1>Help Desk</h1>
+    </mat-toolbar>
+
+     <div class="container">
+        <router-outlet></router-outlet>
+     </div>
+        
+<br>
+<br>
+
+
+<br>
+
+<!-- <button (click)="eliminarDepartamento()" 
+        mat-raised-button color="warn">
+        Eliminar
+        <mat-icon>delete</mat-icon>
+    </button> -->
+
+
+
+
+</mat-sidenav-container>
+
+
+ <!-- <button mat-raised-button color="warn">
+        Eliminar
+        <mat-icon>delete</mat-icon>
+    </button>
+    
+    <button mat-raised-button color="info">
+        Editar
+        <mat-icon>mode_edit</mat-icon>
+    </button> -->
+
+
+
